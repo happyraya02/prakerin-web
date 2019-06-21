@@ -45,7 +45,7 @@ return [
             'port' => env('DB_PORT', '3306'),
             'database' => env('DB_DATABASE', 'pkl_happyraya'),
             'username' => env('DB_USERNAME', 'happyraya'),
-            'password' => env('DB_PASSWORD', 'happyraya'),
+            'password' => env('DB_PASSWORD', 'f02351cc'),
             'unix_socket' => env('DB_SOCKET', ''),
             'charset' => 'utf8mb4',
             'collation' => 'utf8mb4_unicode_ci',
