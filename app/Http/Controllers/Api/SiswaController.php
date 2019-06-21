@@ -75,6 +75,9 @@ class SiswaController extends Controller
 
         // 6. tampilkan hasil
         return response()->json($response, 200);
+
+        // 7. menampilkan error di heroku
+        // heroku config:set APP_DEBUG=true
     }
 
     /**
@@ -124,7 +127,41 @@ class SiswaController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $siswaa = siswaa::Find($id);
+        $input = $request->all();
+
+        if (!$siswaa) {
+            $response = [
+                'succes' => false,
+                'data' => 'Empety',
+                'message' => 'siswa tidak ditemukan'
+            ];
+            return response()->json($response, 404);
+        }
+
+        $validator = Validator::make($input, [
+            'nama' => 'required|min:15'
+        ]);
+
+        if ($validator->fails()) {
+            $response = [
+                'success' => false,
+                'data' => 'Validation Error',
+                'message' => $validator->errors()
+            ];
+            return response()->json($response, 500);
+        }
+
+        $siswaa->nama = $input('nama');
+        $siswaa->save();
+
+        $response = [
+            'success' => true,
+            'data' => $siswaa,
+            'message' => 'Siswa berhasil diupdate.'
+        ];
+
+        return response()->json($response, 200);
     }
 
     /**
