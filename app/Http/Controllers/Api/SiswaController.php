@@ -152,7 +152,7 @@ class SiswaController extends Controller
             return response()->json($response, 500);
         }
 
-        $siswaa->nama = $input('nama');
+        $siswaa->nama = $input['nama'];
         $siswaa->save();
 
         $response = [
