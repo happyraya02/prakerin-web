@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Api;
 use App\Http\Controllers\Controller;
 use App\User;
 use App\siswaa;
+use Illuminate\Support\Facades\Validator;
 use Illuminate\Http\Request;
 
 class SiswaController extends Controller
@@ -16,7 +17,7 @@ class SiswaController extends Controller
      */
     public function index()
     {
-        return siswaa::all();
+        $siswaa = siswaa::all();
         if (!$siswaa) {
             $response = [
                 'succes' => false,
@@ -27,7 +28,7 @@ class SiswaController extends Controller
         }
 
         $response = [
-            'succes' => true,
+            'success' => true,
             'data' => $siswaa,
             'message' => 'Berhasil'
         ];
@@ -35,15 +36,6 @@ class SiswaController extends Controller
         return response()->json($response, 200);
     }
 
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function create()
-    {
-        //
-    }
 
     /**
      * Store a newly created resource in storage.
@@ -53,7 +45,36 @@ class SiswaController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        // 1. tampung semua inputan ke $input
+        $input = $request->all();
+
+        // 2. buat validasi tampung ke $validator
+        $validator = Validator::make($input, [
+            'nama' => 'required|min:15'
+        ]);
+
+        // 3. cek validasi
+        if ($validator->fails()) {
+            $response = [
+                'success' => false,
+                'data' => 'Validation Error',
+                'message' => $validator->errors()
+            ];
+            return response()->json($response, 500);
+        }
+
+        // 4.buat fungsi untuk menghendle semua inputan-> dimasukan ke table
+        $siswaa = siswaa::create($input);
+
+        // 5. menampilkan response
+        $response = [
+            'success' => true,
+            'data' => $siswaa,
+            'message' => 'Siswa berhasil ditambahkan.'
+        ];
+
+        // 6. tampilkan hasil
+        return response()->json($response, 200);
     }
 
     /**
