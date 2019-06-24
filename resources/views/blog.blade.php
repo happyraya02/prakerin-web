@@ -101,7 +101,7 @@
                             <a class="dropdown-item" href="#">Something else here</a>
                         </div>
                     </li>
-                    <li class="nav-item dropdown">
+                   kughdfckujhdfciolfgokj4g3tpou <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="dropdownMenuButton3" data-toggle="dropdown"
                            aria-haspopup="true" aria-expanded="false">Community<span class="sr-only">(current)</span></a>
                         <div class="dropdown-menu" aria-labelledby="dropdownMenuLink_1">
@@ -116,123 +116,6 @@
                 </ul>
             </div>
         </nav>
-    </div>
-</div>
-<div class="container-fluid paddding mb-5">
-    <div class="row mx-0">
-        <div class="col-md-6 col-12 paddding animate-box" data-animate-effect="fadeIn">
-            <div class="fh5co_suceefh5co_height"><img src="{{ asset('assets/frontend/images/a.jfif')}}" alt="img"/>
-                <div class="fh5co_suceefh5co_height_position_absolute"></div>
-                <div class="fh5co_suceefh5co_height_position_absolute_font">
-                    <div class=""><a href="#" class="color_fff"> <i class="fa fa-clock-o"></i>&nbsp;&nbsp;Dec 31,2017
-                    </a></div>
-                    <div class=""><a href="single" class="fh5co_good_font"> After all is said and done, more is said than done </a></div>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-6">
-            <div class="row">
-                <div class="col-md-6 col-6 paddding animate-box" data-animate-effect="fadeIn">
-                    <div class="fh5co_suceefh5co_height_2"><img src="{{ asset('assets/frontend/images/b.jfif')}}" alt="img"/>
-                        <div class="fh5co_suceefh5co_height_position_absolute"></div>
-                        <div class="fh5co_suceefh5co_height_position_absolute_font_2">
-                            <div class=""><a href="#" class="color_fff"> <i class="fa fa-clock-o"></i>&nbsp;&nbsp;Oct
-                                28,2017 </a></div>
-                            <div class=""><a href="single" class="fh5co_good_font_2"> After all is said and done, <br>more is said than done </a></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-6 paddding animate-box" data-animate-effect="fadeIn">
-                    <div class="fh5co_suceefh5co_height_2"><img src="{{ asset('assets/frontend/images/c.jfif')}}" alt="img"/>
-                        <div class="fh5co_suceefh5co_height_position_absolute"></div>
-                        <div class="fh5co_suceefh5co_height_position_absolute_font_2">
-                            <div class=""><a href="#" class="color_fff"> <i class="fa fa-clock-o"></i>&nbsp;&nbsp;Oct 28,2017 </a></div>
-                            <div class=""><a href="single" class="fh5co_good_font_2"> After all is said and done... </a></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-6 paddding animate-box" data-animate-effect="fadeIn">
-                    <div class="fh5co_suceefh5co_height_2"><img src="{{ asset('assets/frontend/images/d.jfif')}}" alt="img"/>
-                        <div class="fh5co_suceefh5co_height_position_absolute"></div>
-                        <div class="fh5co_suceefh5co_height_position_absolute_font_2">
-                            <div class=""><a href="#" class="color_fff"> <i class="fa fa-clock-o"></i>&nbsp;&nbsp;Oct
-                                28,2017 </a></div>
-                            <div class=""><a href="single" class="fh5co_good_font_2"> After all is said and done, more is said than done </a></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-6 paddding animate-box" data-animate-effect="fadeIn">
-                    <div class="fh5co_suceefh5co_height_2"><img src="{{ asset('assets/frontend/images/e.jfif')}}" alt="img"/>
-                        <div class="fh5co_suceefh5co_height_position_absolute"></div>
-                        <div class="fh5co_suceefh5co_height_position_absolute_font_2">
-                            <div class=""><a href="#" class="color_fff"> <i class="fa fa-clock-o"></i>&nbsp;&nbsp;Oct
-                                28,2017 </a></div>
-                            <div class=""><a href="single" class="fh5co_good_font_2"> After all is said and done, more is said... </a></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<div class="container-fluid pt-3">
-    <div class="container animate-box" data-animate-effect="fadeIn">
-        <div>
-            <div class="fh5co_heading fh5co_heading_border_bottom py-2 mb-4">Trending</div>
-        </div>
-        <div class="owl-carousel owl-theme js" id="slider1">
-            <div class="item px-2">
-                <div class="fh5co_latest_trading_img_position_relative">
-                    <div class="fh5co_latest_trading_img"><img src="{{ asset('assets/frontend/images/f.jfif')}}" alt=""
-                                                           class="fh5co_img_special_relative"/></div>
-                    <div class="fh5co_latest_trading_img_position_absolute"></div>
-                    <div class="fh5co_latest_trading_img_position_absolute_1">
-                        <a href="single" class="text-white"> Here's a new way to take better photos for instagram </a>
-                        <div class="fh5co_latest_trading_date_and_name_color"> Walter Johson - March 7,2017</div>
-                    </div>
-                </div>
-            </div>
-            <div class="item px-2">
-                <div class="fh5co_latest_trading_img_position_relative">
-                    <div class="fh5co_latest_trading_img"><img src="{{ asset('assets/frontend/images/g.jfif')}}" alt="" class="fh5co_img_special_relative"/></div>
-                    <div class="fh5co_latest_trading_img_position_absolute"></div>
-                    <div class="fh5co_latest_trading_img_position_absolute_1">
-                        <a href="single" class="text-white"> Here's a new way to take better photos for instagram </a>
-                        <div class="fh5co_latest_trading_date_and_name_color"> Walter Johson - March 7,2017</div>
-                    </div>
-                </div>
-            </div>
-            <div class="item px-2">
-                <div class="fh5co_latest_trading_img_position_relative">
-                    <div class="fh5co_latest_trading_img"><img src="{{ asset('assets/frontend/images/u.jfif')}}" alt="" class="fh5co_img_special_relative"/></div>
-                    <div class="fh5co_latest_trading_img_position_absolute"></div>
-                    <div class="fh5co_latest_trading_img_position_absolute_1">
-                        <a href="single" class="text-white"> Here's a new way to take better photos for instagram </a>
-                        <div class="fh5co_latest_trading_date_and_name_color"> Walter Johson - March 7,2017</div>
-                    </div>
-                </div>
-            </div>
-            <div class="item px-2">
-                <div class="fh5co_latest_trading_img_position_relative">
-                    <div class="fh5co_latest_trading_img"><img src="{{ asset('assets/frontend/images/h.jfif')}}" alt="" class="fh5co_img_special_relative"/></div>
-                    <div class="fh5co_latest_trading_img_position_absolute"></div>
-                    <div class="fh5co_latest_trading_img_position_absolute_1">
-                        <a href="single" class="text-white"> Here's a new way to take better photos for instagram </a>
-                        <div class="fh5co_latest_trading_date_and_name_color"> Walter Johson - March 7,2017</div>
-                    </div>
-                </div>
-            </div>
-            <div class="item px-2">
-                <div class="fh5co_latest_trading_img_position_relative">
-                    <div class="fh5co_latest_trading_img"><img src="{{ asset('assets/frontend/images/i.jfif')}}" alt="" class="fh5co_img_special_relative"/></div>
-                    <div class="fh5co_latest_trading_img_position_absolute"></div>
-                    <div class="fh5co_latest_trading_img_position_absolute_1">
-                        <a href="single" class="text-white"> Here's a new way to take better photos for instagram </a>
-                        <div class="fh5co_latest_trading_date_and_name_color"> Walter Johson - March 7,2017</div>
-                    </div>
-                </div>
-            </div>
-        </div>
     </div>
 </div>
 <div class="container-fluid pb-4 pt-5">

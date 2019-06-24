@@ -20,31 +20,18 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-
-Route::get('/fashion', function () {
-    return view('fashion');
+Route::get('/blog', function () {
+    return view('blog');
 });
-
-Route::get('/archives', function () {
-    return view('archives');
+Route::get('/world', function () {
+    return view('world');
 });
-
+Route::get('/community', function () {
+    return view('community');
+});
 Route::get('/single', function () {
     return view('single');
 });
-
-Route::get('/sports', function () {
-    return view('sports');
-});
-
-Route::get('/style', function () {
-    return view('style');
-});
-
-Route::get('/travel', function () {
-    return view('travel');
-});
-
-Route::get('/video', function () {
-    return view('video');
+Route::get('/contact', function () {
+    return view('contact');
 });
