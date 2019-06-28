@@ -2,6 +2,7 @@
 
 use Illuminate\Http\Request;
 
+
 /*
 |--------------------------------------------------------------------------
 | API Routes
@@ -18,3 +19,9 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 });
 
 Route::resource('siswaa', 'Api\SiswaController');
+
+Route::resource('Kategori', 'Api\KategoriController');
+Route::resource('Tag', 'Api\TagController');
+Route::resource('Artikel', 'Api\ArtikelController');
+
+Route::get('most', 'Api/FrontendController@most');

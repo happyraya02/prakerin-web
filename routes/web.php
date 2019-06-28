@@ -1,4 +1,5 @@
 <?php
+use Illuminate\Support\Facades\Route;
 
 /*
 |--------------------------------------------------------------------------
@@ -35,3 +36,7 @@ Route::get('/single', function () {
 Route::get('/contact', function () {
     return view('contact');
 });
+
+Route::resource('tag', 'Tag_Controller');
+Route::resource('artikel', 'Artikel_Controller');
+Route::resource('kategori', 'Kategori_Controller');
