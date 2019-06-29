@@ -74,7 +74,13 @@
         @yield('content')
     </div>
 
-    <!-- Scripts -->
+    {{-- <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}"></script>
+    <script src="{{ asset('assets/backend/ckeditor/ckeditor.js') }}"></script>
+    <script>
+        CKEDITOR.replace('texteditor');
+    </script>
+    @yield
+    @stack('scripts') --}}
 </body>
 </html>

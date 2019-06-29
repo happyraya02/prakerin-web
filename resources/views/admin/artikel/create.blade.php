@@ -32,7 +32,7 @@
                         </div>
                         <div class="form-group">
                             <label>Konten</label>
-                            <textarea id="editor1" rows="8" cols="30" type="text" name="konten"></textarea>
+                            <textarea class="form-control" id="editor1" rows="8" cols="30" type="text" name="konten"></textarea>
                         </div>
                         <div class="form-group">
                             <label for="">Foto</label>

@@ -44,15 +44,15 @@ class Artikel_Controller extends Controller
      */
     public function store(Request $request)
     {
-        // $request->validate([
+        // $this->validate($request, [
         //     'judul' => 'required|unique:artikels',
-        //     'konten' => 'required|min:50',
+        //     'konten' => 'required',
         //     'foto' => 'required|mimes:jpeg.jpg.png.gif|required|max:2048',
         //     'id_kategori' => 'required',
-        //     'tag_id' => 'required'
+        //     'id_tag' => 'required'
         // ]);
 
-        $artikel = new Artikel;
+        $artikel = new Artikel();
         $artikel->judul = $request->judul;
         $artikel->slug = str_slug($request->judul);
         $artikel->konten = $request->konten;
@@ -61,9 +61,9 @@ class Artikel_Controller extends Controller
 
         if ($request->hasFile('foto')) {
             $file = $request->file('foto');
-            $destinationPath = public_path() . '/assets/img/artikel/';
+            $Path = public_path() . '/assets/img/artikel/';
             $filename = str_random(6) . '_' . $file->getClientOriginalName();
-            $uploadSuccess = $file->move($destinationPath, $filename);
+            $upload = $file->move($Path, $filename);
             $artikel->foto = $filename;
         }
 
@@ -116,13 +116,14 @@ class Artikel_Controller extends Controller
      */
     public function update(Request $request, $id)
     {
-        $request->validate([
+        $this->validate($request, [
             'judul' => 'required|unique:artikels',
-            'konten' => 'required|min:50',
+            'konten' => 'required',
             'foto' => 'required|mimes:jpeg.jpg.png.gif|required|max:2048',
             'id_kategori' => 'required',
-            'tag_id' => 'required'
+            'id_tag' => 'required'
         ]);
+
 
         $artikel = Artikel::findOrFail($id);
         $artikel->judul = $request->judul;

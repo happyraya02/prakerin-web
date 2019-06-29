@@ -26,7 +26,7 @@
                         <thead>
                             <tr>
                                 <th>Judul</th>
-                                <th>Slug</th>
+                                <th>konten</th>
                                 <th>Kategori</th>
                                 <th>Penulis</th>
                                 <th>Foto</th>
@@ -37,9 +37,9 @@
                             @foreach ($artikel as $data)
                             <tr>
                                 <td>{{$data->judul}}</td>
-                                <td>{{$data->slug}}</td>
+                                <td>{{$data->konten}}</td>
                                 <td>{{$data->kategori->nama_kategori}}</td>
-                                <td>{{$data->user->name}}</td>
+                                <td>{{$data->name}}</td>
                                 <td><img src="{{asset('assets/img/artikel/' .$data->foto. '')}}"
                                     style="width:250px; height:250px;" alt="Foto"></td>
 
